@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+h1{
+  font-size:60px;
+}
+p{
+  font-size:20px;
+}
+h3{
+  font-size: 30px;
+}
+body {
+    scroll-behavior: smooth;
+     margin: 0;
+}
+.typing
+{
+  white-space:nowrap;
+  overflow:hidden;
+  width:350px;
+  min-height:70px;
+  font-size: 35px;
+}
+header {
+  font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+     position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: black; 
+    color: white;;
+}
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    
+   
+}
+
+.social-icons a {
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    color:slateblue;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+     width:200;
+}
+
+.social-icons a:hover {
+    color: #ffccff;
+    transform: scale(1.2);
+}
+
+nav {
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white
+}
+
+.nav-links {
+    color: white;
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+     text-align: justify;
+   
+}
+ .nav-links a {
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.hero{
+  font-family:"Betania Patmos GDL", cursive;;
+    height: 100vh;
+    background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+ 
+}
+
+.hero-left{
+  width: 100%;
+}
+
+.hero-right{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-right img{
+  width: 350px;
+  border-radius: 20px;
+}
+
+.btn {
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+    background: #4e73df;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #4a6cf7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  overflow:hidden;
+  white-space:nowrap;
+  width:200px;
+  height:55px;
+}
+
+
+.btn:hover {
+    background: #2e59d9;
+    transform: translateY(-3px);
+}
+
+.section {
+    font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+      background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+/* Background */
+.skills-section {
+    font-family: "Betania Patmos", cursive;
+  min-height: 100vh;
+  padding: 60px 8%;
+  background:url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* Title */
+.skills-section h1 {
+    color:rebeccapurple;
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+/* Skill Card */
+.skill-card {
+  background:#ffccff;
+  border-radius: 25px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Icon */
+.skill-card img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.skill-card p {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Hover Effect (optional but looks nice) */
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding: 10px;
+}
+.section1
+{
+    background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+       font-family: "Betania Patmos", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  .tsbtn{
+    padding: 15px 30px;  
+  font-size: 18px;
+  border-radius: 10px;
+  background-color:#4e73df;
+  color: #ffccff;
+}
+}
