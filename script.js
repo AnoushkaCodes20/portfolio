@@ -2,7 +2,7 @@
 const sentences = [
  "Aspiring software developer👩‍💻",
  "Bookworm First, Human Being Later📚",
- "Swiftie🧣","Gryffindor🦁","Music Afficianado🎸"];
+ "Swiftie🧣","Gryffindor🦁","Music Afficionado🎸"];
 
 let sentenceIndex = 0;
 let charIndex = 0;
