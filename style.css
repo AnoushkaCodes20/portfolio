@@ -278,22 +278,31 @@ footer {
   color: #ffccff;
 }
 }
-@media (max-width:768px){
+
+@media (max-width:600px){
 
 h1{
 font-size:28px;
-}
-
-.container{
-padding:20px;
 }
 
 .navbar{
 flex-direction:column;
 }
 
-.section{
-width:100%;
+}
+
+@media (max-width:900px){
+
+.container{
+padding:20px;
+}
+
+}
+
+@media (min-width:1200px){
+
+.container{
+max-width:1200px;
 }
 
 }
