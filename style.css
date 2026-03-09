@@ -25,7 +25,7 @@ body {
 {
   white-space:nowrap;
   overflow:hidden;
-  width:350px;
+  max-width:100%;
   min-height:70px;
   font-size: 35px;
 }
@@ -74,6 +74,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     color:white
+    flex-wrap:wrap;
+padding:10px 20px;
 }
 
 .nav-links {
@@ -86,6 +88,7 @@ nav {
     display: flex;
     gap: 15px; 
      text-align: justify;
+    
    
 }
  .nav-links a {
@@ -270,6 +273,7 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
   .tsbtn{
     padding: 15px 30px;  
   font-size: 18px;
@@ -277,33 +281,52 @@ footer {
   background-color:#4e73df;
   color: #ffccff;
 }
-}
+@media (max-width:768px){
 
-@media (max-width:600px){
-
-h1{
-font-size:28px;
-}
-
-.navbar{
+.hero{
 flex-direction:column;
+text-align:center;
+padding:40px 20px;
+height:auto;
+}
+
+.hero-right{
+width:100%;
+justify-content:center;
+margin-top:20px;
+}
+
+.hero-right img{
+width:200px;
 }
 
 }
+@media (max-width:768px){
 
-@media (max-width:900px){
-
-.container{
-padding:20px;
+.hero{
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
+height:auto;
 }
 
+.hero-right{
+width:100%;
+justify-content:center;
+margin-top:20px;
 }
 
-@media (min-width:1200px){
+.hero-right img{
+width:200px;
+}
 
-.container{
-max-width:1200px;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+.nav-links{
+flex-direction:column;
+align-items:center;
+}
+
+.typing{
+max-width:100%;
 }
 
 }
