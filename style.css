@@ -283,7 +283,12 @@ footer {
   color: #ffccff;
 }
 @media (max-width:768px){
-
+hero{
+    height:auto;
+flex-direction:column;
+text-align:center;
+padding:120px 20px 40px;
+}
 header{
 padding:10px 15px;
 }
