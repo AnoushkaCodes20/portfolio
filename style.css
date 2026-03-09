@@ -320,6 +320,10 @@ margin-top:20px;
 .hero-right img{
 width:200px;
 }
+nav{
+flex-direction:column;
+gap:10px;
+}
 
 .nav-links{
 flex-direction:column;
