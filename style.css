@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-size: large;
 }
+img{
+max-width:100%;
+height:auto;
+}
 h1{
   font-size:60px;
 }
@@ -273,4 +277,23 @@ footer {
   background-color:#4e73df;
   color: #ffccff;
 }
+}
+@media (max-width:768px){
+
+h1{
+font-size:28px;
+}
+
+.container{
+padding:20px;
+}
+
+.navbar{
+flex-direction:column;
+}
+
+.section{
+width:100%;
+}
+
 }
