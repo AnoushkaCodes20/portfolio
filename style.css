@@ -6,7 +6,6 @@ box-sizing:border-box;
 img{
 max-width:100%;
 height:auto;
-align-items:center;
 }
 h1{
   font-size:60px;
@@ -303,7 +302,10 @@ flex-wrap:wrap;
 h1{
 font-size:26px;
 }
-
+img{
+    max-width=100%;
+    height=auto;
+}
 .nav-links{
 flex-direction:row;
 gap:8px;
