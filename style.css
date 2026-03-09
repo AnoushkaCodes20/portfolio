@@ -18,6 +18,7 @@ h3{
   font-size: 30px;
 }
 body {
+    padding-top:80px;
     scroll-behavior: smooth;
      margin: 0;
 }
