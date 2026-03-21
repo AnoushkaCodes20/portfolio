@@ -54,7 +54,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
     const formMessage = document.getElementById("formMessage");
-
     if (name === "" || email === "" || message === "") {
         formMessage.style.color = "red";
         formMessage.innerText = "Please fill all fields.";
@@ -63,3 +62,16 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         formMessage.innerText = "Message sent successfully!";
     }
 });
+function switchVideo()
+{
+    document.getElementById("myimg").style.display="none";
+    let v=document.getElementById("video");
+    v.play();
+    v.style.display="block";
+}
+function switchImage()
+{
+    document.getElementById("video").style.display="none";
+  let img = document.getElementById("myimg");
+  myimg.style.display="block";
+}
