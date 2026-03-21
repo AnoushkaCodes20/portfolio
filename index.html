@@ -10,10 +10,12 @@
    </head><body>
 <header>
     <nav>
-        
-        <h2 class="logo">Anoushka</h2>
+        <div class="logo">
+            <a href="#home">
+            <img src="logo.png" alt="Logo" href="#home">
+            </a>
+        </div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,18 +23,13 @@
         </ul>
     </nav>
 </header>
-
 <section id="home" class="hero">
     <div class="hero-left">
     <h1>Hi, I'm Anoushka!</h1><br><br>
     <h3 id="typing"></h3><br>
-    <a href="#projects" class="btn">View My Work</a> <br>
+    <a href="#projects" class="btn">My Resume</a> <br>
     <a href="#contact" class="btn">Contact Me</a><br>
     <div class="social-icons">
-    <a href="https://instagram.com/yourusername" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-
     <a href="https://linkedin.com/in/yourusername" target="_blank">
         <i class="fab fa-linkedin"></i>
     </a>
@@ -42,26 +39,31 @@
     </a>
 </div>
 </div>  
-<div class="hero-left">
-    <img src="me.png" alt="Me" height="600" width="500" align="right" usemap="#me">
+<div class="hero-right">
+    <img src="border.png" id="myimg" alt="Me" onclick="switchVideo()" >
+    <video id="video" muted loop onclick="switchImage()">
+        <source src="animation.mp4" type="video/mp4">
+    </video>
+    <br>
+    <!-- <p id="imgtext"></p> -->
+    <!-- <img src="me.png" alt="Me" height="600" width="500" align="right" usemap="#me">
      <map name="me">
     <area shape="rect" coords="5,417,205,589" href="https://open.spotify.com/user/31zji6wc4wurof7ehf2mee3xgxxq?si=16cb45493d0b432e" alt="Music">
     <area shape="rect" coords="303,479,499,595" href="https://letterboxd.com/" alt="Movies">
     <area shape="rect" coords="2,3,157,166" href="https://substack.com/@anoushkawrites" alt="Books">
     <area shape="rect" coords="324,3,499,208" href="https://www.pinterest.com/fangirlsloth1989/" alt="Pinterest">
-    </map>
+    </map>  -->
 </section>
 <section id="about" class="section">
-    <h1>About Me</h1>
-    <p style="line-height: 2; font-size: 20px;">
-        Hi, I'm Anoushka, a student of FYBCA at Somaiya School of Basic and Applied Sciences. I am pursuing an undergraduate degree in Computer Applications at Somaiya School of Basic and Applied Sciences.I hail from a Science background and I studied at P G Garodia School (ICSE) till 10th grade. I have been a part of the prestigious Somaiya institution since 11th grade. I was a Science student here as well with computer science as one of my minors. This made me realise my passion for computers and all things code. Since then, I have been actively learning various programming languages including core Java, C, and C++. I am currently learning Python and enjoy the process of debugging, solving logical problems, and working on projects that challenge me to think creatively and analytically. Outside the academic world, I like to unwind by doing yoga. I am also passionate about creative hobbies like crocheting, learning to play the guitar, watching movies and tv shows and reading. Though naturally introverted, I have stepped into the spotlight by participating in competitions at school and junior college level that involved compering or elocution. I prefer to keep to myself but I am quite expressive when the topic of conversation piques my interest. I am working on coming out of my comfort zone to interact with more people. I aspire to become a successful app developer. I am a driven and ambitious learner and while I do hold myself to high standards I see that as a strength. I believe in using my skills and creativity to build something meaningful—and I’m committed to growing into someone who can contribute both technically and socially to the world around me.
-       
+    <h1 style="background-color: darkmagenta;">About Me</h1>
+    <p style="line-height: 3; font-size: 20px;">
+        Hi, I'm Anoushka, a student of FYBCA at Somaiya School of Basic and Applied Sciences. I am pursuing an undergraduate degree in Computer Applications at Somaiya School of Basic and Applied Sciences.I hail from a Science background and I studied at P G Garodia School (ICSE) till 10th grade. I have been a part of the prestigious Somaiya institution since 11th grade. I was a Science student here as well with computer science as one of my minors. This made me realise my passion for computers and all things code. Since then, I have been actively learning various programming languages including core Java, C, and C++. I am currently learning Python and enjoy the process of debugging, solving logical problems, and working on projects that challenge me to think creatively and analytically. Outside the academic world, I like to unwind by doing yoga. I am also passionate about creative hobbies like crocheting, learning to play the guitar, and reading. Though naturally introverted, I have stepped into the spotlight by participating in competitions at school and junior college level that involved compering or elocution. I prefer to keep to myself but I am quite expressive when the topic of conversation piques my interest. I am working on coming out of my comfort zone to interact with more people. I aspire to become a successful app developer. I am a driven and ambitious learner and while I do hold myself to high standards I see that as a strength. I believe in using my skills and creativity to build something meaningful—and I’m committed to growing into someone who can contribute both technically and socially to the world around me.
         <br><br><br>
     </p>
 </section>
 
 <section id="skills" class="skills-section">
-  <h1>My Skills</h1>
+  <h1 style="background-color: darkmagenta;">My Skills</h1>
 
   <div class="skills-grid">
 
@@ -95,10 +97,14 @@
         <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
         <p>JavaScript</p>
     </div>
+    <div class="skill-card">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-svg-download-png-2945099.png?f=webp" alt="Python">
+        <p>Python</p>
+    </div>
   </div>
 </section>
 <section id="projects" class="section">
-    <h1>Projects</h1>
+    <h1 style="background-color: darkmagenta;">Projects</h1>
     <br>
     <div class="project-container">
         <div class="card">
@@ -120,7 +126,7 @@
 </section>
 
 <section id="contact" class="section1">
-    <h2>Contact Me</h2>
+    <h1 style="color:#4e73df ;background-color: darkmagenta">Contact Me</h1><br>
     <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name">
         <input type="email" id="email" placeholder="Your Email">
@@ -128,7 +134,7 @@
         <button type="submit" class="btn">Send Message</button>
         <p id="formMessage"></p>
     </form>
-    <button id="TopScroll" class="tsbtn">↑</button>
+    <button id="TopScroll" class="tsbtn" style="background-color: darkmagenta;">↑</button>
 </section>
 
 <footer>
