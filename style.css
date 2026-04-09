@@ -1,11 +1,12 @@
 * {
-    margin:0;
-padding:0;
-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
 }
-img{
-max-width:100%;
-height:auto;
+.logo img{
+height:150px;
+width:auto;
 }
 h1{
   font-size:60px;
@@ -17,7 +18,6 @@ h3{
   font-size: 30px;
 }
 body {
-   
     scroll-behavior: smooth;
      margin: 0;
 }
@@ -25,27 +25,61 @@ body {
 {
   white-space:nowrap;
   overflow:hidden;
-  max-width:100%;
+  width:350px;
   min-height:70px;
   font-size: 35px;
 }
 header {
+ background-color:plum;
   font-family: "Betania Patmos", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
+  padding-top:1%;
+  padding-bottom: 5%;
+  height:10px;
   font-style: normal;
-     position:sticky;
+     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    background: black; 
-    color: white;;
+    top:0;
+    left:0;
 }
+.hero{
+  font-family:"Betania Patmos GDL", cursive;
+  color:slateblue;
+    height: 100vh;
+   background-color:pink;
+   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+ 
+}
+
+.hero-left{
+   
+  width:auto;
+}
+
+.hero-right{
+  width: 40%;
+  display: flex;
+  padding-top: 10%;
+  padding-bottom:5%;
+}
+
+.hero-right img{
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+} 
+video{
+  height:700px;
+  width:700px;
+  display:none;
+}  
 .social-icons {
     margin-top: 20px;
     display: flex;
-    
-   
 }
 
 .social-icons a {
@@ -53,7 +87,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-    color:slateblue;
+    color:cornflowerblue;
     font-size: 24px;
     margin: 0 10px;
     transition: 0.3s;
@@ -61,132 +95,97 @@ header {
 }
 
 .social-icons a:hover {
-    color: #ffccff;
+    color:violet;
     transform: scale(1.2);
 }
 
 nav {
-    font-family: "Betania Patmos", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  background-color:plum; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:white
-    flex-wrap:wrap;
-padding:10px 20px;
+    align-content: space-between;
+    align-items:center;
+   height:60px;
+  
 }
 
 .nav-links {
-    color: white;
-    font-family: "Betania Patmos", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
     list-style: none;
     display: flex;
-    gap: 15px; 
-     text-align: justify;
-    
+    gap: 100px; 
+
    
 }
  .nav-links a {
-    font-family: "Betania Patmos", cursive;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size:30px;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight:400;
   font-style: normal;
-    color: white;
-    text-decoration: none;
-    
-    
+    color:#2e59d9;
+    text-decoration: none;    
+  
 }
-.hero{
-  font-family:"Betania Patmos GDL", cursive;;
-    height: 100vh;
-    background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%;
- 
-}
-
-.hero-left{
-  width: 100%;
-}
-
-.hero-right{
-  width: 40%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-right img{
-  width: 350px;
-  border-radius: 20px;
-}
-
+/*Hero page buttons*/
 .btn {
-    font-family: "Betania Patmos", cursive;
+  font-family: "Betania Patmos", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   font-style: normal;
-    background: #4e73df;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-    cursor: pointer;
+  background:cornflowerblue;
+  color: blue;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
   display: block;
   margin-top: 15px;
-  padding: 12px 30px;
-  background: #4a6cf7;
+  padding: 12px 30px; 
   border: none;
   border-radius: 8px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
   overflow:hidden;
   white-space:nowrap;
   width:200px;
   height:55px;
 }
 
-
 .btn:hover {
-    background: #2e59d9;
+    background:violet;
     transform: translateY(-3px);
 }
 
+/*About Me*/
 .section {
     font-family: "Betania Patmos", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-      background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
+  background-color: plum;
     padding: 60px 50px;
     text-align: center;
 }
-
+.section h1{
+  color: slateblue;
+}
+.section p{
+  color:blue;
+ 
+}
 /* Background */
 .skills-section {
-    font-family: "Betania Patmos", cursive;
+  font-family: "Betania Patmos", cursive;
   min-height: 100vh;
   padding: 60px 8%;
-  background:url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-color: pink;
+  
 }
 
 /* Title */
 .skills-section h1 {
-    color:rebeccapurple;
+    color:slateblue;
   font-size: 60px;
   margin-bottom: 50px;
   font-weight: 500;
@@ -201,10 +200,10 @@ padding:10px 20px;
 
 /* Skill Card */
 .skill-card {
-  background:#ffccff;
+  background-color:plum;
   border-radius: 25px;
   padding: 40px 20px;
-  text-align: center;
+  text-align:center;
   transition: 0.3s ease;
 }
 
@@ -218,10 +217,10 @@ padding:10px 20px;
 .skill-card p {
   font-size: 22px;
   font-weight: 500;
-  color: black;
+  color:blue;
 }
 
-/* Hover Effect (optional but looks nice) */
+/* Hover Effect */
 .skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 30px rgba(0,0,0,0.3);
@@ -230,93 +229,87 @@ padding:10px 20px;
 .project-container {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
 .card {
-    background: #f4f4f4;
+    background:pink;
+    color: cornflowerblue;
+    min-height:150px;
     padding: 20px;
     width: 250px;
     border-radius: 10px;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.card:hover {
-    transform: translateY(-10px);
+/*GitHub Link Buttons*/
+.gitbtn
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+  padding: 15px 15px;  
+  font-size: 15px;
+  border-radius: 10px;
+  background-color:#4e73df;
+  color: #ffccff;
 }
-
+.statusbtn
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding:15px 15px;
+  font-size: 15px;
+  border-radius:10px;
+  background-color:#4e73df;
+  color: greenyellow;
+}
 form {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin: auto;
     gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input, textarea {
     padding: 10px;
 }
-
-footer {
-    background: #111;
-    color: white;
-    padding: 10px;
-}
+/*Form Validation*/
 .section1
 {
-    background: url("https://i.pinimg.com/1200x/8e/f4/cd/8ef4cd60e877a97541c8051b02c074e9.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      text-align: center;
-       font-family: "Betania Patmos", cursive;
+  background-color: pink;
+  text-align: center;
+  font-family: "Betania Patmos", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+.submitbtn
+{
+  background-color:#4e73df;
+  padding:15px 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  color:#ffccff;
+}
+.error-mssg
+{
+  color:red;
+}
+  /*Top Sroll Button*/ 
   .tsbtn{
-    padding: 15px 30px;  
+  padding: 15px 30px;  
   font-size: 18px;
   border-radius: 10px;
   background-color:#4e73df;
   color: #ffccff;
 }
-@media (max-width:768px){
-hero{
-    height:auto;
-flex-direction:column;
-text-align:center;
-padding:120px 20px 40px;
-}
-header{
-padding:10px 15px;
-}
-
-nav{
-flex-direction:row;
-align-items:center;
-gap:8px;
-flex-wrap:wrap;
-}
-
-h1{
-font-size:26px;
-}
-img{
-    max-width=100%;
-    height=auto;
-}
-.nav-links{
-flex-direction:row;
-gap:8px;
-}
-
-.nav-links a{
-font-size:16px;
-}
-
-.social-icons a{
-font-size:18px;
-}
-
+footer 
+{
+    background: darkmagenta;
+    color: white;
+    padding: 10px;
 }
