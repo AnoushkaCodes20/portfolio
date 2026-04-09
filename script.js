@@ -46,22 +46,63 @@ scrollBtn.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
-// Form Validation
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
+//Form Validation
+function validateForm()
+{
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
-    const formMessage = document.getElementById("formMessage");
-    if (name === "" || email === "" || message === "") {
-        formMessage.style.color = "red";
-        formMessage.innerText = "Please fill all fields.";
-    } else {
-        formMessage.style.color = "green";
-        formMessage.innerText = "Message sent successfully!";
+    const nameErr=document.getElementById("name-error");
+    const mailErr=document.getElementById("email-error");
+    const mssgerror=document.getElementById("mssg-error");
+    const submit=document.getElementById("submission");
+    nameErr.textContent=" ";
+    mailErr.textContent=" ";
+    mssgerror.textContent=" ";
+    submit.textContent=" ";
+    let isValid=true;
+    if(name==="")
+    {
+        nameErr.textContent="Name field cannot be left blank."
+        isValid=false;
     }
-});
+    if(/\d/.test(name))
+    {
+        nameErr.textContent="Invalid name entered.";
+        isValid=false;
+    }
+    if(email==="")
+    {
+        mailErr.textContent="E-Mail field cannot be left blank."
+        isValid=false;
+    }
+    if(!email.includes("@")||!email.includes("."))
+    {
+        mailErr.textContent="Please enter a valid email address";
+        isValid=false;
+    }
+    if(message==="")
+    {
+        mssgerror.textContent="Please enter a message";
+        isValid=false;
+    }
+    if(isValid)
+    {
+        alert("Form submitted successfully");
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+function resetErrors()
+{
+    document.getElementById("nameErr").textContent = "";
+    document.getElementById("mailErr").textContent = "";
+    document.getElementById("mssgErr").textContent = "";
+}
+//Switch to animation video
 function switchVideo()
 {
     document.getElementById("myimg").style.display="none";
@@ -69,6 +110,7 @@ function switchVideo()
     v.play();
     v.style.display="block";
 }
+//Switch to image
 function switchImage()
 {
     document.getElementById("video").style.display="none";
